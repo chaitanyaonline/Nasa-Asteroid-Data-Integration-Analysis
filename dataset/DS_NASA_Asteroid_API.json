@@ -1,0 +1,21 @@
+{
+	"name": "DS_NASA_Asteroid_API",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"start_date": "2000-01-01",
+				"end_date": "2000-01-08"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}
