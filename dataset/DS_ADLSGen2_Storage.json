@@ -1,0 +1,20 @@
+{
+	"name": "DS_ADLSGen2_Storage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Nasa_Asteroid_Results.json",
+				"folderPath": "NASA-Asteroid-API",
+				"fileSystem": "project-work"
+			}
+		},
+		"schema": {}
+	}
+}
