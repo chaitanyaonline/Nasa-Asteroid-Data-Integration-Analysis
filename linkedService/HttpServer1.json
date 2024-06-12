@@ -1,0 +1,26 @@
+{
+	"name": "HttpServer1",
+	"properties": {
+		"parameters": {
+			"api_key": {
+				"type": "string",
+				"defaultValue": "5S7mwX2qQ06few1ePTAOQHa1yw7C8Q8bcxmArURp"
+			},
+			"start_date": {
+				"type": "string",
+				"defaultValue": "2000-01-01"
+			},
+			"end_date": {
+				"type": "string",
+				"defaultValue": "2000-01-08"
+			}
+		},
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://api.nasa.gov/neo/rest/v1/feed?",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
