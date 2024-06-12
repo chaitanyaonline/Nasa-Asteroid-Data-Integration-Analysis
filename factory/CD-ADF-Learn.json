@@ -1,0 +1,9 @@
+{
+	"name": "CD-ADF-Learn",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0d6ae18e-27cf-4911-9e4c-d48865f51815",
+		"tenantId": "297210a4-8887-42d8-88d0-1053ce886075"
+	}
+}
