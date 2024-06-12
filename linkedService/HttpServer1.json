@@ -1,11 +1,8 @@
 {
 	"name": "HttpServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"parameters": {
-			"api_key": {
-				"type": "string",
-				"defaultValue": "5S7mwX2qQ06few1ePTAOQHa1yw7C8Q8bcxmArURp"
-			},
 			"start_date": {
 				"type": "string",
 				"defaultValue": "2000-01-01"
@@ -20,7 +17,13 @@
 		"typeProperties": {
 			"url": "https://api.nasa.gov/neo/rest/v1/feed?",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous"
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"X-API-Key": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
 		}
 	}
 }
